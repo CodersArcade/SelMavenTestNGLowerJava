@@ -52,6 +52,7 @@ public class TestNgTestBase {
 
             default:
                 WebDriverManager.chromedriver().setup();
+                System.out.println("I am changed now...");
                 ChromeOptions options2 = new ChromeOptions();
                 options2.merge(capabilities);
                 driver = new ChromeDriver(options2);
